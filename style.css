@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::after ,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: karla,sans-serif;
+    line-height: 1.3;
+    color: var(--grayblue);
+    background-color: var(--lgray);
+    padding: var(--paddingx);
+}
+
+:root{
+    --cyan: hsl(179, 62%, 40%);
+    --lcyan: hsl(179, 62%, 50%);
+    --yellow: hsl(71, 73%, 54%);
+    --lgray: hsl(204, 43%, 93%);
+    --grayblue: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --paddingx: 1.85rem;
+    --paddingy: 1.45rem;
+}
+
+.pricing{
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 40rem;
+    margin: auto;
+}
+ 
+@media only screen and (min-width:62.5em) {
+    .pricing{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    .community{
+        grid-column: 1 /3;
+    }
+    
+}
+a{
+    text-decoration: none;
+}
+h3{
+    font-size: 1.2rem;
+}
+h2,h3{
+    margin-top: 0px;
+    line-height: 1.1;
+}
+h2{
+    margin-bottom: 1.2rem;
+}
+ 
+.community{
+    background-color: var(--white);
+    padding: var(--paddingx) var(--paddingy);
+}
+
+.community h2{
+    font-size:1.3rem;
+    color:var(--cyan);
+}
+.community h3{
+    color:var(--yellow);
+    font-size: 1rem;
+}
+
+.community p{
+    line-height: 2.00;
+    font-size: 0.85rem;
+    margin-bottom: 0px;
+}
+
+.subscriotion{
+    background-color: var(--cyan);
+    margin: 0px;
+    padding: var(--paddingx) var(--paddingy);
+    color:var(--lgray)
+}
+
+.subscription__price{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.75;
+}
+.subscription__price span{
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: normal;
+    opacity: 0.75;
+}
+
+.subscriotion p{
+    margin-top: 0;
+    line-height: 2rem;
+    opacity: 0.85;
+    margin-bottom: 1.75rem;
+}
+
+.subscriotion a{
+ display: block;
+ background-color: var(--yellow);
+ padding:0.75rem;
+ text-align: center;
+ color:var(--white);
+ border-radius: 0.5rem;
+ box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.why{
+    background-color: var(--lcyan);
+    padding: var(--paddingx) var(--paddingy);
+}
+
+.why h3{
+    color:var(--white)
+}
+
+.why li{
+    list-style: none;
+    color:var(--lgray);
+    opacity: 0.85;
+    font-size: 0.85rem;
+     
+}
+.why ul{
+    padding:0px;
+    margin-bottom: 0px;
+}
